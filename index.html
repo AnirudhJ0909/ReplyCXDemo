@@ -1,84 +1,238 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReplyCX - Smarter Conversations</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a1a2f;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ---------------- HEADER ---------------- */
+    header {
+      background-color: #1e1e2f;
+      padding: 10px 50px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 140px;
+    }
+
+    .logo-container img {
+      height: 320px;     /* your requested size */
+      border-radius: 6px;
+      margin-top: 70px;  /* to align visually inside header */
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: #00ffc3; }
+
+    /* ---------------- HERO ---------------- */
+    .hero {
+      background: linear-gradient(to right, #00d2ff, #3a47d5);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 { font-size: 48px; margin-bottom: 20px; }
+    .hero p { font-size: 18px; max-width: 700px; margin: 0 auto 30px auto; }
+
+    .hero button {
+      padding: 14px 30px;
+      background: #fff;
+      color: #3a47d5;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+
+    .hero button:hover { background: #00ffc3; color: #1e1e2f; }
+
+    /* ---------------- FEATURES ---------------- */
+    .section { padding: 80px 50px; text-align: center; }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: white !important; /* updated for you */
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature-box {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.10);
+    }
+
+    .feature-box h3 {
+      color: #00ffc3;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    /* ---------------- USE CASES ---------------- */
+    .usecases {
+      background-color: #eef1f7;
+      padding: 60px 50px;
+    }
+
+    .usecases ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .usecases li {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    /* ---------------- FOOTER ---------------- */
+    footer {
+      background: #1e1e2f;
+      color: white;
+      padding: 40px 50px;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 60px;
+    }
+
+    .footer-logo img {
+      height: 180px;       /* visible & proportional to header */
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    .footer-text {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    .footer-text a {
+      color: #00ffc3;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
 <body>
-<header>
-<div class="logo-container">
-<img src="https://raw.githubusercontent.com/AnirudhJ0909/ReplyCXDemo/36f9207bc6117863fd70fefc5ef549ee92d93a4f/ReplyCX%20Posts%20(1)%20(1).png" alt="ReplyCX Logo" />
-</div>
-<nav>
-<a href="#">Home</a>
-<a href="#">Features</a>
-<a href="#">Pricing</a>
-<a href="#">Contact</a>
-</nav>
-</header>
 
+  <!-- HEADER -->
+  <header>
+    <div class="logo-container">
+      <img src="https://raw.githubusercontent.com/AnirudhJ0909/ReplyCXDemo/36f9207bc6117863fd70fefc5ef549ee92d93a4f/ReplyCX%20Posts%20(1)%20(1).png"
+           alt="ReplyCX Logo">
+    </div>
 
-<section class="hero">
-<h1>Smarter Conversations, Better Customer Experience</h1>
-<p>ReplyCX empowers your business with AI-powered chat, omnichannel automation, and seamless integrations to drive customer engagement like never before.</p>
-<button>Get Started Free</button>
-</section>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Smarter Conversations, Better Customer Experience</h1>
+    <p>ReplyCX empowers your business with AI-powered chat, omnichannel automation, and seamless integrations to drive customer engagement like never before.</p>
+    <button>Get Started Free</button>
+  </section>
 
-<section class="section">
-<h2 style="color:white;" class="text-3xl font-bold mb-6">Why Choose ReplyCX?</h2>
-<div class="features">
-<div class="feature-box">
-<h3>Omnichannel Messaging</h3>
-<p>Connect with customers across WhatsApp, SMS, Email, API & more — all from one place.</p>
-</div>
-<div class="feature-box">
-<h3>Bot + Human Support</h3>
-<p>Automate with smart bots, and transfer to agents instantly when needed.</p>
-</div>
-<div class="feature-box">
-<h3>Drag & Drop Builder</h3>
-<p>Create conversational journeys effortlessly without writing a single line of code.</p>
-</div>
-<div class="feature-box">
-<h3>Real-time Analytics</h3>
-<p>Track engagement, measure performance, and optimize with powerful dashboards.</p>
-</div>
-</div>
-</section>
+  <!-- WHY CHOOSE -->
+  <section class="section">
+    <h2>Why Choose ReplyCX?</h2>
 
+    <div class="features">
+      <div class="feature-box">
+        <h3>Omnichannel Messaging</h3>
+        <p>Connect with customers across WhatsApp, SMS, Email & more — all from one place.</p>
+      </div>
 
-<section class="usecases">
-<h2 style="text-align:center;">Top Use Cases</h2>
-<ul>
-<li>
-<h3>Lead Generation</h3>
-<p>Capture and qualify leads automatically via messaging apps.</p>
-</li>
-<li>
-<h3>Appointment Booking</h3>
-<p>Send dynamic QR codes and reminders through WhatsApp.</p>
-</li>
-<li>
-<h3>Order Tracking</h3>
-<p>Integrate with your system to send real-time order updates.</p>
-</li>
-<li>
-<h3>Customer Support</h3>
-<p>Provide 24/7 assistance with FAQ bots and agent routing.</p>
-</li>
-</ul>
-</section>
+      <div class="feature-box">
+        <h3>Bot + Human Support</h3>
+        <p>Automate with smart bots and transfer to agents instantly when needed.</p>
+      </div>
 
+      <div class="feature-box">
+        <h3>Drag & Drop Builder</h3>
+        <p>Create conversational journeys without writing a single line of code.</p>
+      </div>
 
-<section class="testimonials">
-<h2 style="text-align:center;">What Our Users Say</h2>
-<div class="testimonial">“ReplyCX reduced our customer response time by 80%. Game changer.”<span>- Sarah T.</span></div>
-<div class="testimonial">“We deployed a WhatsApp bot in under a day. Super smooth and powerful.”<span>- Rajesh K.</span></div>
-</section>
+      <div class="feature-box">
+        <h3>Real-time Analytics</h3>
+        <p>Track engagement, measure performance & optimize with dashboards.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- USE CASES -->
+  <section class="usecases">
+    <h2 style="text-align:center;">Top Use Cases</h2>
 
-<footer style="background:#0a0a0a; color:white; padding:40px 20px; text-align:center;">
-<img src="https://raw.githubusercontent.com/AnirudhJ0909/ReplyCXDemo/36f9207bc6117863fd70fefc5ef549ee92d93a4f/ReplyCX%20Posts%20(1)%20(1).png" alt="ReplyCX Logo" style="height:330px; margin-bottom:20px;" />
-<p style="font-size:16px; margin-bottom:10px;">ReplyCX is a product of TechAlpha Group LLC.</p>
-<p style="font-size:14px; opacity:0.8;">This is a dummy landing page created for demonstration purposes. For the official website, please visit reply.cx.</p>
-</footer>
+    <ul>
+      <li><h3>Lead Generation</h3><p>Capture and qualify leads automatically.</p></li>
+      <li><h3>Appointment Booking</h3><p>Send reminders & confirmations on WhatsApp.</p></li>
+      <li><h3>Order Tracking</h3><p>Send real-time order updates to customers.</p></li>
+      <li><h3>Customer Support</h3><p>24/7 support with FAQs & agent routing.</p></li>
+    </ul>
+  </section>
 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="https://raw.githubusercontent.com/AnirudhJ0909/ReplyCXDemo/36f9207bc6117863fd70fefc5ef549ee92d93a4f/ReplyCX%20Posts%20(1)%20(1).png"
+           alt="ReplyCX Footer Logo">
+    </div>
+
+    <div class="footer-text">
+      ReplyCX is a product of <strong>TechAlpha Group LLC</strong>.<br><br>
+      <em>This is a dummy landing page for demonstration purposes only. For the official website, please visit  
+      <a href="https://reply.cx" target="_blank">Reply.cx</a></em>
+    </div>
+  </footer>
 
 </body>
 </html>
+
